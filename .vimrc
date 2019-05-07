@@ -1,4 +1,5 @@
 filetype indent on
+sytax on
 set nu
 set wildmenu
 set showcmd

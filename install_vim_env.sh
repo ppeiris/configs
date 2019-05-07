@@ -4,12 +4,7 @@ umask 0027
 # install vim pathegeni
 VIM_DIR=~/.vim
 VIMRC=~/.vimrc
-
-
 VIMRC_BACKUP=~/.vimrc.backup
-
-
-
 AUTOLOAD_DIR=$VIM_DIR/autoload
 BUNDLE_DIR=$VIM_DIR/bundle
 VIM_PATHEGON_DIR=$AUTOLOAD_DIR/vim-pathegon
@@ -50,15 +45,15 @@ rm -rf $VIM_AIRLINE_DIR
 git clone https://github.com/vim-airline/vim-airline $VIM_AIRLINE_DIR
 
 
-
 # install my vimrc file
 if [ -s $VIMRC ]; then
     echo "Backing up .vimrc file"
-    mv $VIMRC $VIMRC_BACKUP
+    cp $VIMRC $VIMRC_BACKUP
 fi
 
-
-echo "Get my vimrc file from gitlab"
-wget https://raw.githubusercontent.com/ppeiris/configs/master/.vimrc -O $VIMRC
+# clone the repo to tmp
+git clone https://github.com/ppeiris/configs.git /tmp/ppeiris_config
+mv /tmp/ppeiris_config/.vimrc $VIMRC
+rm -rf /tmp/ppeiris_config
 
 
