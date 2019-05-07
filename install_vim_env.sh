@@ -40,7 +40,7 @@ git clone https://github.com/kien/ctrlp.vim.git $BUNDLE_DIR/ctrlp.vim
 # NerdTree
 git clone https://github.com/scrooloose/nerdtree.git $BUNDLE_DIR/nerdtree
 
-
+# show buffer
 git clone https://github.com/bling/vim-bufferline ~/.vim/bundle/vim-bufferline
 
 # install my vimrc file
