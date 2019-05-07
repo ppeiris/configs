@@ -43,6 +43,12 @@ git clone https://github.com/scrooloose/nerdtree.git $BUNDLE_DIR/nerdtree
 # show buffer
 git clone https://github.com/bling/vim-bufferline ~/.vim/bundle/vim-bufferline
 
+# git stuff
+git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive
+vim -u NONE -c "helptags ~/.vim/bundle/vim-fugitive/doc" -c q
+
+
+
 # install my vimrc file
 if [ -s $VIMRC ]; then
     echo "Backing up .vimrc file"
