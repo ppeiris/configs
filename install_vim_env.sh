@@ -41,6 +41,8 @@ git clone https://github.com/kien/ctrlp.vim.git $BUNDLE_DIR/ctrlp.vim
 git clone https://github.com/scrooloose/nerdtree.git $BUNDLE_DIR/nerdtree
 
 
+git clone https://github.com/bling/vim-bufferline ~/.vim/bundle/vim-bufferline
+
 # install my vimrc file
 if [ -s $VIMRC ]; then
     echo "Backing up .vimrc file"
