@@ -34,6 +34,13 @@ rm -rf ~/.vim/bundle/vim-easymotion
 git clone https://github.com/easymotion/vim-easymotion ~/.vim/bundle/vim-easymotion
 
 
+# CtlP 
+git clone https://github.com/kien/ctrlp.vim.git $BUNDLE_DIR/ctrlp.vim
+
+# NerdTree
+git clone https://github.com/scrooloose/nerdtree.git $BUNDLE_DIR/nerdtree
+
+
 # install my vimrc file
 if [ -s $VIMRC ]; then
     echo "Backing up .vimrc file"
