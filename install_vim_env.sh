@@ -43,6 +43,13 @@ echo "Clone vim-airline"
 VIM_AIRLINE_DIR=$BUNDLE_DIR/vim-airline
 rm -rf $VIM_AIRLINE_DIR
 git clone https://github.com/vim-airline/vim-airline $VIM_AIRLINE_DIR
+rm -rf $BUNDLE_DIR/vim-airline-themes
+git clone https://github.com/vim-airline/vim-airline-themes $BUNDLE_DIR/vim-airline-themes
+
+
+# EasyMotion
+rm -rf ~/.vim/bundle/vim-easymotion
+git clone https://github.com/easymotion/vim-easymotion ~/.vim/bundle/vim-easymotion
 
 
 # install my vimrc file
