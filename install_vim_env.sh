@@ -44,13 +44,21 @@ rm -rf $VIM_PATHEGON_DIR
 git clone https://github.com/tpope/vim-pathogen.git $VIM_PATHEGON_DIR
 
 
+echo "Clone vim-airline"
+VIM_AIRLINE_DIR=$BUNDLE_DIR/vim-airline
+rm -rf $VIM_AIRLINE_DIR
+git clone https://github.com/vim-airline/vim-airline $VIM_AIRLINE_DIR
 
+
+
+# install my vimrc file
 if [ -s $VIMRC ]; then
     echo "Backing up .vimrc file"
     mv $VIMRC $VIMRC_BACKUP
 fi
 
 
-
+echo "Get my vimrc file from gitlab"
+wget https://raw.githubusercontent.com/ppeiris/configs/master/.vimrc -O $VIMRC
 
 
