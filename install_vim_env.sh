@@ -48,6 +48,8 @@ git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive
 vim -u NONE -c "helptags ~/.vim/bundle/vim-fugitive/doc" -c q
 
 
+git clone git://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
+ 
 
 # install my vimrc file
 if [ -s $VIMRC ]; then
