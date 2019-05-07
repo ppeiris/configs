@@ -9,34 +9,14 @@ AUTOLOAD_DIR=$VIM_DIR/autoload
 BUNDLE_DIR=$VIM_DIR/bundle
 VIM_PATHEGON_DIR=$AUTOLOAD_DIR/vim-pathegon
 
-if ! [[ -d "$AUTOLOAD_DIR"  ]]; then
-    if ! mkdir -p "$AUTOLOAD_DIR"; then
-        echo  "Failed to create $AUTOLOAD_DIR directory."
-        exit 1
-    fi
-fi
+rm -rf $AUTOLOAD_DIR
+mkdir -p $AUTOLOAD_DIR
 
+rm -rf $BUNDLE_DIR
+mkdir -p $BUNDLE_DIR
 
-if ! [[ -d "$BUNDLE_DIR"  ]]; then
-    if ! mkdir -p "$BUNDLE_DIR"; then
-        echo  "Failed to create $BUNDLE_DIR directory."
-        exit 1
-    fi
-fi
+curl -LSso $AUTOLOAD_DIR/pathogen.vim https://tpo.pe/pathogen.vim
 
-
-if ! [[ -d "$VIM_PATHEGON_DIR"  ]]; then
-    if ! mkdir -p "$VIM_PATHEGON_DIR"; then
-        echo  "Failed to create $VIM_PATHEGON_DIR directory."
-        exit 1
-    fi
-fi
-
-# clone pathegen repository
-echo "Clone pathegon repo"
-echo "==============================================================="
-rm -rf $VIM_PATHEGON_DIR
-git clone https://github.com/tpope/vim-pathogen.git $VIM_PATHEGON_DIR
 
 
 echo "Clone vim-airline"
