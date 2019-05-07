@@ -9,6 +9,8 @@ AUTOLOAD_DIR=$VIM_DIR/autoload
 BUNDLE_DIR=$VIM_DIR/bundle
 VIM_PATHEGON_DIR=$AUTOLOAD_DIR/vim-pathegon
 
+mkdir -p $VIM_DIR
+
 rm -rf $AUTOLOAD_DIR
 mkdir -p $AUTOLOAD_DIR
 
