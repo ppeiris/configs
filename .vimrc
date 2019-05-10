@@ -12,6 +12,8 @@ set laststatus=2
 set hlsearch
 
 " Colors theme
-set background=light 
-"set background=dark 
+
+let g:solarized_termcolors=256
+"set background=light 
+set background=dark 
 colorscheme solarized
