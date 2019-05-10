@@ -10,3 +10,8 @@ execute pathogen#infect()
 set laststatus=2
 
 set hlsearch
+
+" Colors theme
+set background=light 
+"set background=dark 
+colorscheme solarized
