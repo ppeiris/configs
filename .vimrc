@@ -10,12 +10,3 @@ execute pathogen#infect()
 set laststatus=2
 
 set hlsearch
-
-
-
-
-call plug#begin()
-
-Plug 'terryma/vim-multiple-cursors'
-
-call plug#end()
