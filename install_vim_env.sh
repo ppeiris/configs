@@ -48,8 +48,12 @@ git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive
 vim -u NONE -c "helptags ~/.vim/bundle/vim-fugitive/doc" -c q
 
 
+# Colors 
 git clone https://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
 
+git clone https://github.com/sickill/vim-monokai.git /tmp/vim-monokai
+cp /tmp/vim-monokai/colors/monokai.vim ~/.vim/colors/
+rm -rf /tmp/vim-monokai
 
 # git clone git://github.com/shawncplus/phpcomplete.vim.git ~/.vim/bundle/phpcomplete.vim
 
