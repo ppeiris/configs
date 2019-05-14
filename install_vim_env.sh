@@ -10,6 +10,7 @@ BUNDLE_DIR=$VIM_DIR/bundle
 COLORS=$VIM_DIR/colors
 VIM_PATHEGON_DIR=$AUTOLOAD_DIR/vim-pathegon
 
+sudo apt-get install ctags
 
 rm -rf $VIM_DIR
 mkdir -p $VIM_DIR
@@ -25,6 +26,7 @@ curl -LSso $AUTOLOAD_DIR/pathogen.vim https://tpo.pe/pathogen.vim
 VIM_AIRLINE_DIR=$BUNDLE_DIR/vim-airline
 rm -rf $VIM_AIRLINE_DIR
 git clone https://github.com/vim-airline/vim-airline $VIM_AIRLINE_DIR
+
 rm -rf $BUNDLE_DIR/vim-airline-themes
 git clone https://github.com/vim-airline/vim-airline-themes $BUNDLE_DIR/vim-airline-themes
 
@@ -32,7 +34,6 @@ git clone https://github.com/vim-airline/vim-airline-themes $BUNDLE_DIR/vim-airl
 # EasyMotion
 rm -rf ~/.vim/bundle/vim-easymotion
 git clone https://github.com/easymotion/vim-easymotion ~/.vim/bundle/vim-easymotion
-
 
 # CtlP 
 git clone https://github.com/kien/ctrlp.vim.git $BUNDLE_DIR/ctrlp.vim
