@@ -10,7 +10,7 @@ execute pathogen#infect()
 set laststatus=2
 set hlsearch
 set colorcolumn=79
-set tags=ags
+set tags=tags
 
 " Colors theme
 
