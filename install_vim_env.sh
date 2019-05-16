@@ -59,11 +59,16 @@ rm -rf /tmp/vim-monokai
 # git clone git://github.com/shawncplus/phpcomplete.vim.git ~/.vim/bundle/phpcomplete.vim
 
 git clone https://github.com/terryma/vim-multiple-cursors.git ~/.vim/bundle/vim-multiple-cursors
+vim -u NONE -c "helptags ~/.vim/bundle/vim-multiple-cursors/doc" -c q
+
 
 #
 git clone https://tpope.io/vim/surround.git ~/.vim/bundle/surround
 vim -u NONE -c "helptags ~/.vim/bundle/surround/doc" -c q
 
+
+git clone https://github.com/ervandew/supertab ~/.vim/bundle/supertab
+vim -u NONE -c "helptags ~/.vim/bundle/supertab/doc" -c q
 
 # install my vimrc file
 if [ -s $VIMRC ]; then
