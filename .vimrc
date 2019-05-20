@@ -1,4 +1,5 @@
 filetype indent on
+filetype plugin on
 syntax on
 set nu
 set wildmenu
