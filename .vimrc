@@ -11,7 +11,7 @@ set laststatus=2
 set hlsearch
 set colorcolumn=79
 set tags=tags
-
+set cursorline
 " Colors theme
 
 let g:solarized_termcolors=256

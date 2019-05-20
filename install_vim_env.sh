@@ -70,6 +70,13 @@ vim -u NONE -c "helptags ~/.vim/bundle/surround/doc" -c q
 git clone https://github.com/ervandew/supertab ~/.vim/bundle/supertab
 vim -u NONE -c "helptags ~/.vim/bundle/supertab/doc" -c q
 
+
+
+
+git clone https://github.com/scrooloose/nerdcommenter.git ~/.vim/bundle/nerdcommenter
+vim -u NONE -c "helptags ~/.vim/bundle/nerdcommenter/doc" -c q
+
+
 # install my vimrc file
 if [ -s $VIMRC ]; then
     echo "Backing up .vimrc file"
