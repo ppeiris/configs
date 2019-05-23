@@ -76,6 +76,13 @@ vim -u NONE -c "helptags ~/.vim/bundle/supertab/doc" -c q
 git clone https://github.com/scrooloose/nerdcommenter.git ~/.vim/bundle/nerdcommenter
 vim -u NONE -c "helptags ~/.vim/bundle/nerdcommenter/doc" -c q
 
+git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox
+vim -u NONE -c "helptags ~/.vim/bundle/gruvbox/doc" -c q
+
+
+git clone --recurse-submodules https://github.com/python-mode/python-mode.git ~/.vim/bundle/python-mode
+vim -u NONE -c "helptags ~/.vim/bundle/python-mode/doc" -c q
+
 
 # install my vimrc file
 if [ -s $VIMRC ]; then
