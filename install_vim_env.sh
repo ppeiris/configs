@@ -11,6 +11,9 @@ COLORS=$VIM_DIR/colors
 VIM_PATHEGON_DIR=$AUTOLOAD_DIR/vim-pathegon
 
 sudo apt-get install ctags
+# https://vi.stackexchange.com/questions/12827/how-to-install-vim-with-python-support-for-debian-strech
+sudo apt install vim-nox
+
 
 rm -rf $VIM_DIR
 mkdir -p $VIM_DIR
