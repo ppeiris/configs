@@ -12,6 +12,9 @@ COLORS=$VIM_DIR/colors
 VIM_PATHEGON_DIR=$AUTOLOAD_DIR/vim-pathegon
 
 sudo apt-get install ctags
+# https://vi.stackexchange.com/questions/12827/how-to-install-vim-with-python-support-for-debian-strech
+sudo apt install vim-nox
+
 
 sudo apt-get -y install tmux
 
@@ -79,6 +82,13 @@ vim -u NONE -c "helptags ~/.vim/bundle/supertab/doc" -c q
 
 git clone https://github.com/scrooloose/nerdcommenter.git ~/.vim/bundle/nerdcommenter
 vim -u NONE -c "helptags ~/.vim/bundle/nerdcommenter/doc" -c q
+
+git clone https://github.com/morhetz/gruvbox.git ~/.vim/bundle/gruvbox
+vim -u NONE -c "helptags ~/.vim/bundle/gruvbox/doc" -c q
+
+
+git clone --recurse-submodules https://github.com/python-mode/python-mode.git ~/.vim/bundle/python-mode
+vim -u NONE -c "helptags ~/.vim/bundle/python-mode/doc" -c q
 
 
 # install my vimrc file
