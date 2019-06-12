@@ -4,6 +4,7 @@ umask 0027
 # install vim pathegeni
 VIM_DIR=~/.vim
 VIMRC=~/.vimrc
+TMUX=~/.tmux.conf
 VIMRC_BACKUP=~/.vimrc.backup
 AUTOLOAD_DIR=$VIM_DIR/autoload
 BUNDLE_DIR=$VIM_DIR/bundle
@@ -11,6 +12,9 @@ COLORS=$VIM_DIR/colors
 VIM_PATHEGON_DIR=$AUTOLOAD_DIR/vim-pathegon
 
 sudo apt-get install ctags
+
+sudo apt-get -y install tmux
+
 
 rm -rf $VIM_DIR
 mkdir -p $VIM_DIR
@@ -86,6 +90,7 @@ fi
 # clone the repo to tmp
 git clone https://github.com/ppeiris/configs.git /tmp/ppeiris_config
 mv /tmp/ppeiris_config/.vimrc $VIMRC
+mv /tmp/ppeiris_config/.tmux.conf $TMUX 
 rm -rf /tmp/ppeiris_config
 
 
