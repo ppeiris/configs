@@ -22,3 +22,9 @@ set background=dark
 "colorscheme solarized
 colorscheme monokai
 
+" pymode quickfix window height.
+let g:pymode_quickfix_minheight = 0
+let g:pymode_quickfix_maxheight = 0
+let g:pymode_warnings = 0
+
+

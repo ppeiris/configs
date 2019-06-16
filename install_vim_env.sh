@@ -90,11 +90,6 @@ vim -u NONE -c "helptags ~/.vim/bundle/gruvbox/doc" -c q
 git clone --recurse-submodules https://github.com/python-mode/python-mode.git ~/.vim/bundle/python-mode
 vim -u NONE -c "helptags ~/.vim/bundle/python-mode/doc" -c q
 
-# pymode quickfix window height.
-let g:pymode_quickfix_minheight = 0
-let g:pymode_quickfix_maxheight = 0
-let g:pymode_warnings = 0
-
 
 # install my vimrc file
 
