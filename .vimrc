@@ -13,7 +13,6 @@ set hlsearch
 set colorcolumn=79
 set tags=tags
 set cursorline
-set highlight CursorLineNR ctermbg=red
 autocmd InsertEnter,InsertLeave * set cul!
 " Colors theme
 
@@ -29,3 +28,14 @@ let g:pymode_quickfix_maxheight = 0
 let g:pymode_warnings = 0
 
 
+
+
+" highlight CursorLineNR ctermbg=red
+
+augroup CursorLine
+    au!
+    au VimEnter * setlocal cursorline
+    au WinEnter * setlocal cursorline
+    au BufWinEnter * setlocal cursorline
+    au WinLeave * setlocal nocursorline
+augroup END
