@@ -13,6 +13,7 @@ set hlsearch
 set colorcolumn=79
 set tags=tags
 set cursorline
+set highlight CursorLineNR ctermbg=red
 autocmd InsertEnter,InsertLeave * set cul!
 " Colors theme
 
