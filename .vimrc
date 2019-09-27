@@ -39,3 +39,8 @@ augroup CursorLine
     au BufWinEnter * setlocal cursorline
     au WinLeave * setlocal nocursorline
 augroup END
+
+
+" NerdTree toggle 
+
+nmap <F6> :NERDTreeToggle<CR>
