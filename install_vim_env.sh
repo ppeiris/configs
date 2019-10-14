@@ -91,6 +91,12 @@ git clone --recurse-submodules https://github.com/python-mode/python-mode.git ~/
 vim -u NONE -c "helptags ~/.vim/bundle/python-mode/doc" -c q
 
 
+git clone --depth 1 https://github.com/zxqfl/tabnine-vim ~/.vim/bundle/tabnine-vim
+vim -u NONE -c "helptags ~/.vim/bundle/tabnine-vim/doc" -c q
+
+#set rtp+=~/tabnine-vim
+
+
 # install my vimrc file
 
 if [ -s $VIMRC ]; then
