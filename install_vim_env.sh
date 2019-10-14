@@ -25,7 +25,7 @@ mkdir -p $AUTOLOAD_DIR
 mkdir -p $BUNDLE_DIR
 mkdir -p $COLORS
 
-# Install package manager 
+# Install package manager
 curl -LSso $AUTOLOAD_DIR/pathogen.vim https://tpo.pe/pathogen.vim
 
 
@@ -42,7 +42,7 @@ git clone https://github.com/vim-airline/vim-airline-themes $BUNDLE_DIR/vim-airl
 rm -rf ~/.vim/bundle/vim-easymotion
 git clone https://github.com/easymotion/vim-easymotion ~/.vim/bundle/vim-easymotion
 
-# CtlP 
+# CtlP
 git clone https://github.com/kien/ctrlp.vim.git $BUNDLE_DIR/ctrlp.vim
 
 # NerdTree
@@ -56,7 +56,7 @@ git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive
 vim -u NONE -c "helptags ~/.vim/bundle/vim-fugitive/doc" -c q
 
 
-# Colors 
+# Colors
 git clone https://github.com/altercation/vim-colors-solarized.git ~/.vim/bundle/vim-colors-solarized
 
 git clone https://github.com/sickill/vim-monokai.git /tmp/vim-monokai
@@ -91,8 +91,8 @@ git clone --recurse-submodules https://github.com/python-mode/python-mode.git ~/
 vim -u NONE -c "helptags ~/.vim/bundle/python-mode/doc" -c q
 
 
-git clone --depth 1 https://github.com/zxqfl/tabnine-vim ~/.vim/bundle/tabnine-vim
-vim -u NONE -c "helptags ~/.vim/bundle/tabnine-vim/doc" -c q
+#git clone --depth 1 https://github.com/zxqfl/tabnine-vim ~/.vim/bundle/tabnine-vim
+#vim -u NONE -c "helptags ~/.vim/bundle/tabnine-vim/doc" -c q
 
 #set rtp+=~/tabnine-vim
 
@@ -107,7 +107,7 @@ fi
 # clone the repo to tmp
 git clone https://github.com/ppeiris/configs.git /tmp/ppeiris_config
 mv /tmp/ppeiris_config/.vimrc $VIMRC
-mv /tmp/ppeiris_config/.tmux.conf $TMUX 
+mv /tmp/ppeiris_config/.tmux.conf $TMUX
 rm -rf /tmp/ppeiris_config
 
 
