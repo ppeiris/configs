@@ -12,7 +12,7 @@ set laststatus=2
 set hlsearch
 set colorcolumn=79
 set tags=tags
-set rtp+=~/tabnine-vim
+" set rtp+=~/tabnine-vim
 set cursorline
 autocmd InsertEnter,InsertLeave * set cul!
 " Colors theme
