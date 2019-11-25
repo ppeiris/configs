@@ -98,7 +98,6 @@ vim -u NONE -c "helptags ~/.vim/bundle/vim-markdown/doc" -c q
 git clone git://github.com/mustache/vim-mustache-handlebars.git ~/.vim/bundle/mustache
 
 
-git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/bundle/typescript/start/typescript-vim
 
 
 
