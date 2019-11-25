@@ -11,12 +11,12 @@ BUNDLE_DIR=$VIM_DIR/bundle
 COLORS=$VIM_DIR/colors
 VIM_PATHEGON_DIR=$AUTOLOAD_DIR/vim-pathegon
 
-sudo apt-get -y install ctags
+sudo yum -y install ctags
 # https://vi.stackexchange.com/questions/12827/how-to-install-vim-with-python-support-for-debian-strech
-sudo apt -y install vim-nox
+sudo yum -y install vim-nox
 
 
-sudo apt-get -y install tmux
+sudo yum -y install tmux
 
 
 rm -rf $VIM_DIR
@@ -96,6 +96,11 @@ vim -u NONE -c "helptags ~/.vim/bundle/vim-markdown/doc" -c q
 
 
 git clone git://github.com/mustache/vim-mustache-handlebars.git ~/.vim/bundle/mustache
+
+
+git clone https://github.com/leafgarland/typescript-vim.git ~/.vim/bundle/typescript/start/typescript-vim
+
+
 
 #git clone --depth 1 https://github.com/zxqfl/tabnine-vim ~/.vim/bundle/tabnine-vim
 #vim -u NONE -c "helptags ~/.vim/bundle/tabnine-vim/doc" -c q
