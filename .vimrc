@@ -15,6 +15,8 @@ set tags=tags
 " set rtp+=~/tabnine-vim
 set cursorline
 autocmd InsertEnter,InsertLeave * set cul!
+autocmd Filetype php setlocal tabstop=4
+
 " Colors theme
 
 let g:solarized_termcolors=256
