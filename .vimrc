@@ -47,3 +47,5 @@ augroup END
 " NerdTree toggle 
 
 nmap <F6> :NERDTreeToggle<CR>
+" double tap backslash and t (\\ + t) will open the terminal
+nmap <Leader>\t :botright vertical terminal<CR>
