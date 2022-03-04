@@ -26,7 +26,7 @@ mkdir -p $BUNDLE_DIR
 mkdir -p $COLORS
 
 # Install package manager
-curl -LSso $AUTOLOAD_DIR/pathogen.vim https://tpo.pe/pathogen.vim
+curl -kLSso $AUTOLOAD_DIR/pathogen.vim https://tpo.pe/pathogen.vim
 
 
 # vim-airline
