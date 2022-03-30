@@ -52,6 +52,7 @@ nmap <Leader>\t :botright vertical terminal<CR>
 
 
 " Go to tab by number
+" Jump to the first tab using \\ + 1 
 noremap <leader>1 1gt
 noremap <leader>2 2gt
 noremap <leader>3 3gt
@@ -62,3 +63,11 @@ noremap <leader>7 7gt
 noremap <leader>8 8gt
 noremap <leader>9 9gt
 noremap <leader>0 :tablast<cr>
+
+
+" ctrl + j move the cour to next split
+noremap <C-j> <C-W>j
+noremap <C-k> <C-W>k
+noremap <C-h> <C-W>h
+noremap <C-l> <C-W>l
+
