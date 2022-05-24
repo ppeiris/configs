@@ -95,10 +95,7 @@ git clone https://github.com/plasticboy/vim-markdown.git ~/.vim/bundle/vim-markd
 vim -u NONE -c "helptags ~/.vim/bundle/vim-markdown/doc" -c q
 
 
-git clone git://github.com/mustache/vim-mustache-handlebars.git ~/.vim/bundle/mustache
-
-
-
+# git clone git://github.com/mustache/vim-mustache-handlebars.git ~/.vim/bundle/mustache
 
 
 #git clone --depth 1 https://github.com/zxqfl/tabnine-vim ~/.vim/bundle/tabnine-vim
